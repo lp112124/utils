@@ -1,0 +1,131 @@
+
+==================================================================
+--> Open process log by merge[pid: 32162] at 2016-10-08 16:41:32
+==================================================================
+
+TRACE	[2016-10-08 16:41:32] merge: open log success
+DEBUG	[2016-10-08 16:41:32] merge: =========[0]============
+
+==================================================================
+--> Open process log by merge[pid: 32210] at 2016-10-08 16:42:52
+==================================================================
+
+TRACE	[2016-10-08 16:42:52] merge: open log success
+DEBUG	[2016-10-08 16:42:52] merge: =========[0]============
+
+==================================================================
+--> Open process log by merge[pid: 32243] at 2016-10-08 16:43:50
+==================================================================
+
+TRACE	[2016-10-08 16:43:50] merge: open log success
+DEBUG	[2016-10-08 16:43:50] merge: =========[0]============
+DEBUG	[2016-10-08 16:44:44] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 16:47:30] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 16:47:53] merge: merge_file[170]:path[/root/merge_file/bin].
+
+==================================================================
+--> Open process log by merge[pid: 32554] at 2016-10-08 16:50:43
+==================================================================
+
+TRACE	[2016-10-08 16:50:43] merge: open log success
+DEBUG	[2016-10-08 16:50:43] merge: =========[0]============
+
+==================================================================
+--> Open process log by merge[pid: 32557] at 2016-10-08 16:51:02
+==================================================================
+
+TRACE	[2016-10-08 16:51:02] merge: open log success
+DEBUG	[2016-10-08 16:51:02] merge: =========[0]============
+DEBUG	[2016-10-08 16:51:59] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 16:53:35] merge: merge_file[170]:path[/root/merge_file/bin].
+
+==================================================================
+--> Open process log by merge[pid: 2673] at 2016-10-08 17:56:43
+==================================================================
+
+TRACE	[2016-10-08 17:56:43] merge: open log success
+DEBUG	[2016-10-08 17:56:43] merge: =========[0]============
+
+==================================================================
+--> Open process log by merge[pid: 2677] at 2016-10-08 17:56:53
+==================================================================
+
+TRACE	[2016-10-08 17:56:53] merge: open log success
+DEBUG	[2016-10-08 17:56:53] merge: =========[0]============
+DEBUG	[2016-10-08 17:57:25] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 17:59:37] merge: cut_file_name[54]: filename[cs_20130901_073207_796-03.log],over_flag[7],fileno[96],offset[0].
+DEBUG	[2016-10-08 18:00:28] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_073207_796-03.log].
+DEBUG	[2016-10-08 18:00:55] merge: move_file_cmd[198]: cmd[mv ../data/src_dir/cs_20130901_073207_796-03.log ../data/old_src_dir]
+DEBUG	[2016-10-08 18:00:55] merge: move_file_cmd[201]: cmd[mv ../data/src_dir/cs_20130901_073207_796-03.log ../data/old_src_dir] failed, err: No such file or directory
+
+==================================================================
+--> Open process log by merge[pid: 3045] at 2016-10-08 18:05:46
+==================================================================
+
+TRACE	[2016-10-08 18:05:46] merge: open log success
+DEBUG	[2016-10-08 18:05:46] merge: =========[0]============
+
+==================================================================
+--> Open process log by merge[pid: 3048] at 2016-10-08 18:06:12
+==================================================================
+
+TRACE	[2016-10-08 18:06:12] merge: open log success
+DEBUG	[2016-10-08 18:06:12] merge: =========[0]============
+DEBUG	[2016-10-08 18:06:13] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 18:06:13] merge: cut_file_name[54]: filename[cs_20130901_073207_796-03.log],over_flag[7],fileno[96],offset[0].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_073207_796-03.log].
+WARNING	[2016-10-08 18:06:13] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_073207
+DEBUG	[2016-10-08 18:06:13] merge: cut_file_name[54]: filename[cs_20130901_232605_214-03.log],over_flag[2],fileno[14],offset[0].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_232605_214-03.log].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/cs_20130901_232605_214-03.log],fileno[14].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file_thread_check_cache_file[410]: only one file in cache
+WARNING	[2016-10-08 18:06:13] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_232605
+DEBUG	[2016-10-08 18:06:13] merge: cut_file_name[54]: filename[cs_20130901_152808_911-03.log],over_flag[9],fileno[11],offset[0].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_152808_911-03.log].
+DEBUG	[2016-10-08 18:06:13] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/°`],fileno[14].
+WARNING	[2016-10-08 18:06:13] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_152808
+
+==================================================================
+--> Open process log by merge[pid: 3052] at 2016-10-08 18:06:24
+==================================================================
+
+TRACE	[2016-10-08 18:06:24] merge: open log success
+DEBUG	[2016-10-08 18:06:24] merge: =========[0]============
+DEBUG	[2016-10-08 18:06:27] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 18:06:27] merge: cut_file_name[54]: filename[cs_20130901_073207_796-03.log],over_flag[7],fileno[96],offset[0].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_073207_796-03.log].
+WARNING	[2016-10-08 18:06:27] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_073207
+DEBUG	[2016-10-08 18:06:27] merge: cut_file_name[54]: filename[cs_20130901_232605_214-03.log],over_flag[2],fileno[14],offset[0].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_232605_214-03.log].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/cs_20130901_232605_214-03.log],fileno[14].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file_thread_check_cache_file[410]: only one file in cache
+WARNING	[2016-10-08 18:06:27] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_232605
+DEBUG	[2016-10-08 18:06:27] merge: cut_file_name[54]: filename[cs_20130901_152808_911-03.log],over_flag[9],fileno[11],offset[0].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_152808_911-03.log].
+DEBUG	[2016-10-08 18:06:27] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/°`],fileno[14].
+
+==================================================================
+--> Open process log by merge[pid: 3103] at 2016-10-08 18:06:52
+==================================================================
+
+TRACE	[2016-10-08 18:06:52] merge: open log success
+DEBUG	[2016-10-08 18:06:52] merge: =========[0]============
+DEBUG	[2016-10-08 18:07:04] merge: merge_file[170]:path[/root/merge_file/bin].
+
+==================================================================
+--> Open process log by merge[pid: 3162] at 2016-10-08 18:07:49
+==================================================================
+
+TRACE	[2016-10-08 18:07:49] merge: open log success
+DEBUG	[2016-10-08 18:07:49] merge: =========[0]============
+DEBUG	[2016-10-08 18:07:56] merge: merge_file[170]:path[/root/merge_file/bin].
+DEBUG	[2016-10-08 18:08:10] merge: cut_file_name[54]: filename[cs_20130901_073207_796-03.log],over_flag[7],fileno[96],offset[0].
+DEBUG	[2016-10-08 18:08:18] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_073207_796-03.log].
+WARNING	[2016-10-08 18:09:55] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_073207
+DEBUG	[2016-10-08 18:10:38] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/cs_20130901_073207_796-03.log],fileno[96].
+DEBUG	[2016-10-08 18:10:38] merge: merge_file_thread_check_cache_file[410]: only one file in cache
+DEBUG	[2016-10-08 18:11:44] merge: cut_file_name[54]: filename[cs_20130901_232605_214-03.log],over_flag[2],fileno[14],offset[0].
+DEBUG	[2016-10-08 18:11:46] merge: merge_file[195]: dir_name[../data/src_dir/cs_20130901_232605_214-03.log].
+WARNING	[2016-10-08 18:12:47] merge: merge_file[224]: hash_insert succeeded, prefix_name: cs_20130901_232605
+DEBUG	[2016-10-08 18:12:48] merge: merge_file_thread_proc[492]:src_filename[../data/old_src_dir/cs_20130901_232605_214-03.log],fileno[14].
+DEBUG	[2016-10-08 18:12:48] merge: merge_file_thread_check_cache_file[410]: only one file in cache
