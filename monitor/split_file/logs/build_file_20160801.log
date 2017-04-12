@@ -1,0 +1,20 @@
+[2016-08-01 11:33:01] [INFO] time is [201608010030]. [check_param]
+[2016-08-01 11:33:01] [INFO] ====================startup script:[build_file.sh]===========================
+[2016-08-01 11:33:01] [INFO] Dir/file_name[/data2/cs/logs/cs*.log]. [get_dir_name]
+[2016-08-01 11:33:01] [INFO] YTD IS 201608010030. [fwrite]
+[2016-08-01 11:33:01] [INFO] analyst Dir/filename[/data2/cs/logs/cs_20160801.log]. [fwrite]
+[2016-08-01 11:33:01] [INFO] ====================shutdown script:[build_file.sh]===========================
+[2016-08-01 11:36:27] [INFO] time is [201608010030]. [check_param]
+[2016-08-01 11:36:27] [INFO] ====================startup script:[build_file.sh]===========================
+[2016-08-01 11:36:27] [INFO] Dir/file_name[/data2/cc/logs/cc*.log]. [get_dir_name]
+[2016-08-01 11:36:27] [INFO] YTD IS 201608010030. [fwrite]
+[2016-08-01 11:36:27] [INFO] analyst Dir/filename[/data2/cc/logs/cc_20160801.log]. [fwrite]
+[2016-08-01 11:36:27] [INFO] file[/data2/cc/logs/cc_20160801.log] is new
+[2016-08-01 11:36:27] [INFO] info[20160801 /data2/cs/logs/cs_20160801.log 2819007338 340 1] is over
+[2016-08-01 11:36:27] [INFO] ====================shutdown script:[build_file.sh]===========================
+[2016-08-02 00:00:29] [INFO] time is [201608012358]. [check_param]
+[2016-08-02 00:00:29] [INFO] ====================startup script:[build_file.sh]===========================
+[2016-08-02 00:00:29] [INFO] Dir/file_name[/data2/cc/logs/cc*.log]. [get_dir_name]
+[2016-08-02 00:00:29] [INFO] YTD IS 201608012358. [fwrite]
+[2016-08-02 00:00:29] [INFO] analyst Dir/filename[/data2/cc/logs/cc_20160801.log]. [fwrite]
+[2016-08-02 00:00:29] [INFO] ====================shutdown script:[build_file.sh]===========================

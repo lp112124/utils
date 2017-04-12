@@ -1,0 +1,9 @@
+.*\[warning\].*PacketParseFilter failed
+.*\[warning\].*epoll_wait failed
+.*\[warning\].*PacketParseFilter failed 
+.*\[warning\].*Template Var:
+.*\[warning\].*response packet write error
+.*\[warning\].*emergyHandle2 fd_conn
+.*\[warning\].*emergyHandle fd_conn
+.*\[warning\].*packet buffer is filled
+.*\[warning\].*ad_form=0 is invaild

@@ -1,0 +1,30 @@
+[common]
+logPath = ../logs/
+
+processName = ams 
+
+serverID = 3201001
+
+corePath = /data4/corefile/
+
+monitorType = 11041
+
+outLogPath = ../data/
+
+gapTime = 120
+
+storeFile = ams.stat
+
+cluster = test
+
+module = ams
+
+#amsLogPath = /data2/ams/logs/ams_YYYYMMDD.log
+
+amsLogPath = /data2/ADMS/ams_t/data/ams_YYYYMMDD.log
+
+esPat = 192.168.25.244:1819 .*ESTABLISHED
+
+[warning]
+warningPathA = ../msg/warning.dat 
+warningPathB = ../msg/error.dat
