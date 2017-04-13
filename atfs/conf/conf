@@ -1,0 +1,17 @@
+[common]
+logger          = /run/atfs/logs/
+log_level       = info
+cluster         = afts
+mailList        = yuanyun@adpanshi.com
+servid          = 6010002
+scriptPath      = ../scripts/
+
+[task]
+tlog_es_cs = -s /run/es/data/logs/current/success -d /run/cs/data/es_logs/current --store /run/atfs/record/tlog_es.she --srcScriptPath /run/es/scripts/ --desScriptPath /run/cs/scripts/t_log/ -g 120 --queryGap 2 --queryTimeOut 900 --ctrHost root@localhost -1 22 -p 22
+
+clog_cs_cc = -s /run/cs/data/cs_logs/current -d /run/cc/data/cs_logs/current --store /run/atfs/record/clog_cs.she --srcScriptPath /run/cs/scripts/c_log/ --desScriptPath /run/cc/scripts/c_log/ -g 120 --queryGap 2 --queryTimeOut 900 --ctrHost root@localhost -1 22 -p 22
+
+batch_cc_cs = -s /run/cc/data/batch_logs/current/03 -d /run/cs/data/batch_logs/current --store /run/atfs/record/batch_cc_cs.she --srcScriptPath /run/cc/scripts/batch_cs/ --desScriptPath /run/cs/scripts/batch_log/ --srcPostScript None -g 120 --queryGap 2 --queryTimeOut 900 --ctrHost root@localhost -1 22 -p 22
+
+batch_cc_ams = -s /run/cc/data/batch_logs/current/03 -d /run/ams/data/batch_logs/current --store /run/atfs/record/batch_cc_ams.she --srcScriptPath /run/cc/scripts/batch_ams/ --desScriptPath /run/ams/scripts/batch_log/ --srcPostScript None -g 120 --queryGap 2 --queryTimeOut 900 --ctrHost root@localhost -1 22 -p 22
+
