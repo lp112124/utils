@@ -1,0 +1,30 @@
+##! /bin/bash -
+scp /run/adhai_fc/send_data/remote_send.sh cs1:/tmp
+scp -P 57764 /run/adhai_fc/send_data/rerun_send_logs_4.sh storage:/tmp
+`ssh cs1 "sh /tmp/remote_send.sh"`
+yest=`date -d last-day +%Y%m%d`
+today=`date +%Y%m%d`
+h=`date -d last-hour +%H`
+if [ $h -ne 23 ]; then
+        if [ -f /tmp/cs4_${today}_${h}_es.tar.gz.ok ]; then
+                ssh -p 57764 storage "mkdir -p /data1/es_logs/04/${today}"
+                scp -P 57764 /tmp/cs4_${today}_${h}_es.tar.gz storage:/data1/es_logs/04/${today}
+		scp -P 57764 /tmp/cs4_${today}_${h}_es.tar.gz.ok storage:/data1/es_logs/04/${today}
+		ssh -p 57764 storage "sh /tmp/rerun_send_logs_4.sh"
+                rm /tmp/cs4_${today}_${h}_es.tar.gz*
+                echo "Send data success" >>/run/adhai_fc/send_data/success.log
+        else
+                exit 1
+        fi
+else
+        if [ -f /tmp/cs4_${yest}_${h}_es.tar.gz.ok ]; then
+                ssh -p 57764 storage "mkdir -p /data1/es_logs/04/${yest}"
+                scp -P 57764 /tmp/cs4_${yest}_${h}_es.tar.gz storage:/data1/es_logs/04/${yest}
+		scp -P 57764 /tmp/cs4_${yest}_${h}_es.tar.gz.ok storage:/data1/es_logs/04/${yest}
+		ssh -p 57764 storage "sh /tmp/rerun_send_logs_4.sh"
+                rm /tmp/cs4_${yest}_${h}_es.tar.gz*
+                echo "Send data success" >>/run/adhai_fc/send_data/success.log
+        else
+                exit 1
+        fi
+fi

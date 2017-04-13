@@ -1,0 +1,74 @@
+#!/bin/bash
+
+#################################################
+# @Name		ADHai FC Push Module Configure File
+# @Ver		0.02
+# @Author	Mac Chow
+# @Email	zhouxinghai@adpanshi.com
+#################################################
+
+##
+# DEBUG flag
+DEBUG="no"
+
+##
+# RUN_MODE means how to execute this script
+# support for 2 modes, include one time and repeat in X seconds
+RUN_MODE="onetime"
+#RUN_MODE="repeat"
+#RUN_INTERVAL=5
+
+##
+# Source and destinations config
+FILES="fcpush.csv"
+
+##
+# Delete files flag, in "yes" or "no"
+DELETE_FLAG="yes"
+
+##
+# Move successed files flag, in "yes" or "no"
+MOVE_FLAG="no"
+
+##
+# Check file flag
+# set this flag 'yes' to enable remote file md5sum check after file transfered
+AFTER_CHECK_FLAG="yes"
+
+##
+# Retry X times if failed
+RETRY_IF_FAILED=3
+RETRY_IF_FILE_IS_OPENED=3
+RETRY_IF_FAILED_SLEEPTIME=5
+RETRY_IF_FILE_IS_OPENED_SLEEPTIME=1
+
+##
+# LOGS
+ERROR_LOG="/data1/bx/fcpush_logs/mc_cs/error.log"
+INFO_LOG="/data1/bx/fcpush_logs/mc_cs/info.log"
+TOTAL_LOG="/data1/bx/fcpush_logs/mc_cs/total.log"
+FAIL_LOG="/data1/bx/fcpush_logs/mc_cs/fail.log"
+
+##
+# A csv data1base contains file information:
+# SOURCE_FILENAME,DESTINATION,FILE_SIZE,FILE_MTIME,FILE_UPLOADTIME
+PROCESS_CSV="status.csv"
+#Ip port
+PORT_NUM="57764"
+##
+# A directory stores failed files
+FAILED_DIR="/tmp/fails/mc_cs"
+
+##
+# A directory stores successed files
+SUCCESSED_DIR="/tmp/success/mc_cs"
+
+##
+# LOCK
+# if this file exists, dont run this program
+LOCK_FLAG="/tmp/fcpush_mc_cs.lock"
+
+##
+# EXIT FLAG FILE
+# only works in repeat mode, if this file contents is "abort", then exit this program
+ABORT_FLAG="flag"

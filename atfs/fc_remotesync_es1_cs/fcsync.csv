@@ -1,0 +1,27 @@
+#################################################
+# @Name		ADHai FC Pull Module Source Dests Def
+# @Ver		0.02
+# @Author	Mac Chow
+# @Email	zhouxinghai@adpanshi.com
+#################################################
+# !!!IMPORTANT!!!
+# [ USAGE ]
+# Put your sources and destnations below the comments text follow this fields format:
+# remotehost,remotepath,type[in direct|regex|script],mode[in normal,archive],localpath
+# [ FIELDS DETAIL ]:
+# localpath: your local dirs or files, like "/opt"
+# type: "direct", "regex:REGEXRULE", "script:SCRIPTNAME"
+# mode: "normal", "archive"
+# remotehost: username@host, like "root@192.168.25.47"
+# remotedir: your path on remote servers, like "/tmp"
+# [ EXAMPLES ]:
+# /home/mac/Temp/,direct,root@192.168.95.47,/tmp
+# /home/mac/Temp/temp.txt,direct,root@192.168.95.47,/tmp
+# /home/mac/Temp/,regex:.+\.xml,root@192.168.95.47,/tmp
+# /home/mac/Temp/,script:/tmp/mytest.sh,root@192.168.95.47,/tmp
+# !!!IMPORTANT!!!
+# [ CONTENT ]
+
+
+adhai@es1,/data1/es_logs/current/success,regex:.+\.log,normal,adhai@cs1,/data1/es_logs/current/
+

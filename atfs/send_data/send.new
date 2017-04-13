@@ -1,0 +1,25 @@
+##! /bin/bash -
+scp /run/adhai_fc/send_data/remote_send.sh cs1:/tmp
+`ssh cs1 "sh /tmp/remote_send.sh"`
+yest=`date -d last-day +%Y%m%d`
+today=`date +%Y%m%d`
+h=`date -d last-hour +%H`
+if [ $h -ne 23 ]; then
+        if [ -f /tmp/cs3_${today}_${h}_es.tar.gz.ok ]; then
+                ssh -p 57764 storage "mkdir -p /data2/pre_data/${today}/es_logs"
+                scp -P 57764 /tmp/cs3_${today}_${h}_es.tar.gz storage:/data2/pre_data/${today}/es_logs
+                rm /tmp/cs3_${today}_${h}_es.tar.gz*
+                echo "Send data success" >>/run/adhai_fc/send_data/success.log
+        else
+                exit 1
+        fi
+else
+        if [ -f /tmp/cs3_${yest}_${h}_es.tar.gz.ok ]; then
+                ssh -p 57764 storage "mkdir -p /data2/pre_data/${yest}/es_logs"
+                scp -P 57764 /tmp/cs3_${yest}_${h}_es.tar.gz storage:/data2/pre_data/${yest}/es_logs
+                rm /tmp/cs3_${yest}_${h}_es.tar.gz*
+                echo "Send data success" >>/run/adhai_fc/send_data/success.log
+        else
+                exit 1
+        fi
+fi

@@ -1,0 +1,11 @@
+##! /bin/bash -
+#yest=`date -d last-day +%Y%m%d`
+today=`date +%Y%m%d`
+h=`date -d last-hour +%H`
+ES_DIR="/data1/es_logs/history/${today}"
+cd $ES_DIR
+tar zcf cs3_${today}_${h}_es.tar.gz es_03*_${today}_${h}*.log
+scp -P 57764 ${ES_DIR}/cs3_${today}_${h}_es.tar.gz msmq:/tmp
+ssh -p 57764 msmq "touch /tmp/cs3_${today}_${h}_es.tar.gz.ok"
+rm ${ES_DIR}/cs3_${today}_${h}_es.tar.gz
+rm /tmp/remote_send.sh
