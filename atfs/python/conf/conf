@@ -2,7 +2,7 @@
 logger          = /run/atfs/logs/
 log_level       = info
 cluster         = afts
-mailList        = yuanyun@adpanshi.com
+mailList        = lp112124@163.com
 servid          = 6010002
 scriptPath      = ../scripts/
 
