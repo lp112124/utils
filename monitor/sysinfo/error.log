@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "sysinfo.py", line 256, in <module>
+    main()
+  File "sysinfo.py", line 224, in main
+    cfDict = confParse("../conf/conf")
+  File "sysinfo.py", line 214, in confParse
+    confDict['eth'] = cf.get("common", "eth")
+  File "/usr/lib64/python2.6/ConfigParser.py", line 556, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'common'
